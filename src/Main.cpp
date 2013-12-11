@@ -15,7 +15,14 @@ void playLetter(char input)
 	bool useSoundFile = true;
 
 	soundFileString = "resource/ .wav";
-	if (input == ' ')
+
+	if (65 <= input && input <= 90)
+	{
+		input += 32;
+		useSoundFile = false;
+		playLetter(input);
+	}
+	else if (input == ' ')
 	{
 		Sleep(100);
 		useSoundFile = false;
