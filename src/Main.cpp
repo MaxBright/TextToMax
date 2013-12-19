@@ -1,5 +1,4 @@
 //Text To Max
-//October 13, 2013
 //Copyright 2013 Max Bright. All Rights Reserved.
 
 #include <iostream>
